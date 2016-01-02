@@ -1,0 +1,8 @@
+Starters!
+
+
+<% for starter in @starters %>
+  <%= starter.name %>
+  <%= link_to("Show", starter_path(starter)) %>
+  <%= link_to("Edit", edit_starter_path(starter)) %>
+<% end %>
