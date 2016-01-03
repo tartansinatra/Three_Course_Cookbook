@@ -1,0 +1,13 @@
+Desserts!
+<br>
+<li> <%= link_to('New Dessert', new_dessert_path) %> </li>
+<br>
+
+
+<% for dessert in @desserts %>
+  <%= dessert.name %>
+  <%= link_to("Show", dessert_path(dessert)) %>
+  <%= link_to("Edit", edit_dessert_path(dessert)) %>
+  <%= button_to('Delete', dessert_path(dessert), method: :delete, data: {confirm: 'Are you sure?'}) %>
+  <br>
+<% end %>

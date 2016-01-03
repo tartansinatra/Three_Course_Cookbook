@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :starters
+  resources :starters, :mains, :desserts
   root 'starters#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

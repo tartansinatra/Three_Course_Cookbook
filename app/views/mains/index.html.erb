@@ -1,0 +1,12 @@
+Main Dishes!
+<br>
+<li> <%= link_to('New Main Dish', new_main_path) %> </li>
+<br>
+
+<% for main in @mains %>
+  <%= main.name %>
+  <%= link_to("Show", main_path(main)) %>
+  <%= link_to("Edit", edit_main_path(main)) %>
+  <%= button_to('Delete', main_path(main), method: :delete, data: {confirm: 'Are you sure?'}) %>
+  <br>
+<% end %>

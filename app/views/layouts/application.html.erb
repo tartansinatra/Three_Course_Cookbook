@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CookbookTwo</title>
+  <title>Three Course Cookbook</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,10 +10,8 @@
   <nav>
     <ul>
       <li> <%= link_to('Starters', starters_path) %> </li>
-      <li> <%= link_to('New Starter', new_starter_path) %> </li>
-      <br>
-      <li> Mains </li>
-      <li> Desserts </li>
+      <li> <%= link_to('Mains', mains_path) %> </li>
+      <li> <%= link_to('Desserts', desserts_path) %> </li>
     </ul>
   </nav>
 
