@@ -26,6 +26,11 @@ class StartersController < ApplicationController
     redirect_to(starters_path)
   end
 
+  def destroy
+    starter = Starter.find(params[:id])
+    starter.destroy
+    redirect_to(starters_path)
+  end
 
 
   private

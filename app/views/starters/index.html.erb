@@ -1,8 +1,11 @@
 Starters!
+<br>
 
 
 <% for starter in @starters %>
   <%= starter.name %>
   <%= link_to("Show", starter_path(starter)) %>
   <%= link_to("Edit", edit_starter_path(starter)) %>
+  <%= button_to('Delete', starter_path(starter), method: :delete, data: {confirm: 'Are you sure?'}) %>
+  <br>
 <% end %>
